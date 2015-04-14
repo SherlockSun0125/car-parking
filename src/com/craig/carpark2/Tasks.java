@@ -1,9 +1,5 @@
 package com.craig.carpark2;
 
-//Craig Miller
-//S1437151
-
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -111,7 +107,6 @@ public class Tasks {
 		List<CarParkModel> cps = new ArrayList<CarParkModel>();
 		
 		String name = "";
-		String spaces = "0";
 		String status = "";
 		int totalSpaces = 0;
 		int spacesTaken = 0;

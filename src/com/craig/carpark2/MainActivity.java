@@ -1,8 +1,5 @@
 package com.craig.carpark2;
 
-//Craig Miller
-//S1437151
-
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -11,8 +8,6 @@ import java.util.TimerTask;
 
 import com.craig.carpark2.Tasks;
 
-import android.support.v4.view.MenuItemCompat;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -28,7 +23,6 @@ import android.view.animation.LinearInterpolator;
 import android.view.animation.RotateAnimation;
 import android.app.Activity;
 import android.app.AlertDialog;
-import android.app.Dialog;
 import android.app.SearchManager;
 import android.app.SearchableInfo;
 import android.content.Context;
@@ -36,20 +30,17 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.graphics.Color;
-import android.graphics.PorterDuff.Mode;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.StrictMode;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.SearchView;
 import android.widget.Spinner;
-import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.ViewFlipper;
 
@@ -60,7 +51,6 @@ public class MainActivity extends Activity implements SearchView.OnQueryTextList
 	final private String url = "http://open.glasgow.gov.uk/api/live/parking.php?type=xml";
 	private String xml_string;
 	private SearchView mSearchView;
-    //private TextView mStatusView;
     private Spinner spinner;
     private ImageView spin;
     Timer timer;
@@ -182,10 +172,6 @@ public class MainActivity extends Activity implements SearchView.OnQueryTextList
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-//		System.out.println("Printing the xml");
-//		if(s != null){
-//			System.out.println(s);	
-//		}
 		
 	    	return s;
 	      
@@ -289,7 +275,6 @@ public class MainActivity extends Activity implements SearchView.OnQueryTextList
             // Handling right to left screen swap.
              if (lastX > currentX) {
             	 
-            	 // If there is a child (to the left), kust break.
             	 if (viewFlipper.getDisplayedChild() == 1)
             		 break;
     
@@ -332,17 +317,14 @@ public class MainActivity extends Activity implements SearchView.OnQueryTextList
     }
     
     public boolean onQueryTextChange(String newText) {
-        //mStatusView.setText("Search: " + newText);
         return false;
     }
 
     public boolean onQueryTextSubmit(String query) {
-        //mStatusView.setText("Searched for: " + query);
         return false;
     }
 
     public boolean onClose() {
-        //mStatusView.setText("Not open");
         return false;
     }
 
