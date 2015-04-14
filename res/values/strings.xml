@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Craig Miller
+S1437151
+-->
+<resources>
+
+    <string name="app_name">Car Parks</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="text1">Select a Car Park</string>
+    <string name="action_search">Menu</string>
+    <string name="action_settings">Menu2</string>
+    <string name="title_activity_ambient">Ambient Mode</string>
+
+</resources>

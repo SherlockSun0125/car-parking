@@ -1,0 +1,109 @@
+<!--
+Craig Miller
+S1437151
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+   <ViewFlipper
+      android:id="@+id/viewflipper"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:layout_margin="6dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="false"
+                android:cropToPadding="false"
+                android:paddingLeft="0dp"
+                android:paddingTop="0dp"
+                android:src="@drawable/spin" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="216dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/top"
+                android:paddingLeft="25dp"
+                android:text="@string/text1"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/top" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/listView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gap"
+                android:cacheColorHint="@color/abc_search_url_text_pressed"
+                android:textColor="#000000" >
+            </ListView>
+
+        <ProgressBar android:id="@+id/pb" style="@android:style/Widget.ProgressBar.Horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" /></LinearLayout>
+
+        
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Aggregated Car Park Info"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <ListView
+            android:id="@+id/listView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp" >
+
+        </ListView>
+
+    </LinearLayout>
+
+	</ViewFlipper>
+</RelativeLayout>

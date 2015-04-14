@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+Craig Miller
+S1437151 -->
+<resources>
+    <dimen name="top">5dp</dimen>
+    <dimen name="gap">20dp</dimen>
+</resources>
